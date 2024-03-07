@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #b2941a, #070582, #8c8ed0, #b2941a, #070738);
+        }
+        .container {
+            width: 300px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="submit"] {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo img {
+            width: 130px;
+            height: auto;
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>opm-certificate-generator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="/Certificate/templates/Opam Technologies.webp" alt="Logo">
+        </div>
+        <h2>Certificate Generator</h2>
+        <form action="login.php" method="post">
+            <label for="internname">Intern Name:</label>
+            <input type="text" id="internname" name="internname" required>
+            <br/>  
+            <br/>
+            <label for="startdate">Start Date:</label>
+            <input type="date" id="sdate" name="startdate" required>
+            <br/>  
+            <br/>
+            <br/>
+            <label for="enddate">End Date:</label>
+            <input type="date" id="ddate" name="enddate" required>
+            <br/>  
+            <br/>
+            <br/>
+            <label for="role">Role of Intern:</label>
+            <input type="text" id="role" name="role" required>
+
+            <label for="techtype">Technology:</label>
+            <input type="text" id="techtype" name="techtype" required>
+
+            <input type="submit" value="Generate">
+        </form>
+    </div>
+</body>
+<script>
+     
+</script>
+</html>
